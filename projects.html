@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects — My Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <div class="brand"><a href="/"><span>My</span>Portfolio</a></div>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation">☰</label>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a class="active" href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 style="margin:18px 0;">Projects</h1>
+    <div class="grid">
+      <article class="card">
+        <h3>Personal Profile</h3>
+        <p>A responsive profile page with a clean layout and mobile menu.</p>
+        <a class="btn" href="index.html">Open</a>
+      </article>
+
+      <article class="card">
+        <h3>Mini Calculator (Python)</h3>
+        <p>Command-line calculator written and run in Termux.</p>
+        <a class="btn" href="#" onclick="alert('Run it in Termux: calc'); return false;">Run tip</a>
+      </article>
+
+      <article class="card">
+        <h3>Static Gallery</h3>
+        <p>A simple grid of images using pure HTML/CSS.</p>
+        <a class="btn" href="#" onclick="alert('Add images to assets/img and link them in an HTML grid.'); return false;">How-to</a>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Ufondu Chidera — All rights reserved.</div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

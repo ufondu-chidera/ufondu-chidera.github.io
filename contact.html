@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — My Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <div class="brand"><a href="/"><span>My</span>Portfolio</a></div>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation">☰</label>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card" style="margin-top:16px;">
+      <h1>Contact</h1>
+      <p>Feel free to reach out!</p>
+      <p><strong>Email:</strong> <a class="btn" href="mailto:ufonduchidera77@gmail.com">Email Me</a></p>
+      <p><strong>WhatsApp:</strong> <a class="btn secondary" href="https://wa.me/2348035756140" target="_blank" rel="noopener">Chat on WhatsApp</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Ufondu Chidera — All rights reserved.</div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
